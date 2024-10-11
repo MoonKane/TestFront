@@ -1,0 +1,16 @@
+:root {
+
+    --text-color: #18181B;
+    --text-color-gray: #747476;
+
+    --background-color: #fff;
+    --user-background-color: #929298;
+    --notification-background-color: #D6FF2B;
+
+    --container-width: 1800px;
+    --container-max-width: 95%;
+
+    --svg-invert: 0;
+
+    --header-button-size: 44px;
+}
