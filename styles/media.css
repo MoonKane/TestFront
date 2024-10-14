@@ -42,18 +42,15 @@
         left: 0;
         z-index: 100;
     }
-
-    .main-block .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
     .candidate-info .main-info {
         display: block;
+    }
+
+    .candidate-info .main-info .main-info-vacancies-list, .candidate-info .main-info .main-info-comments-list {
+        max-height: 60vh;
     }
 
     .main-info .main-info-left {
@@ -70,6 +67,10 @@
 @media only screen and (max-width: 790px) {
     .tabs .tabs-block {
         display: none;
+    }
+
+    .tabs .tab-menu {
+        display: block;
     }
 }
 

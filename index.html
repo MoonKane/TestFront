@@ -411,6 +411,16 @@
 
                     </section>
 
+                    <section class="tab-menu">
+                        <select class="tab-menu-list" id="candidate-info-tab-menu" name="tabs">
+                            <option value="main-info">Основная информация</option>
+                            <option value="exercise">Задачи</option>
+                            <option value="meeting">Собеседования</option>
+                            <option value="chat">Чат</option>
+                            <option value="comments">Комментарии</option>
+                            <option value="changes-history">История изменений</option>
+                        </select>
+                    </section>
                     
                 </section>
 
@@ -435,12 +445,12 @@
                         </div>
 
                         <div class="main-info-user-tabs">
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-phone-number">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Телефон</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
-                                        <span class="main-info-user-tab-second-text phone-number-text">+7 (927) 699-22-32</span>
+                                        <span class="main-info-user-tab-second-text candidate-phone-number-text">+7 (<span class="phone-num-fisrt">927</span>) <span class="phone-num-second">699</span>-<span class="phone-num-third">22</span>-<span class="phone-num-fourth">32</span></span>
                                         <div class="user-tab-second-but phone-number-copy-but">
                                             <img class="user-tab-second-but-img svg-icon" src="data/images/mainInfo/copy.svg">
                                         </div>
@@ -454,49 +464,49 @@
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-email">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Email</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
-                                    <span class="main-info-user-tab-second-text">konstantinopol@gmail.com</span>
+                                    <span class="main-info-user-tab-second-text candidate-email-text">konstantinopol@gmail.com</span>
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-telegram">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Telegram</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
-                                    <span class="main-info-user-tab-second-text">@konstantinopol</span>
+                                    <span class="main-info-user-tab-second-text candidate-telegram-text">@konstantinopol</span>
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-link">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Источник</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
                                     <a class="user-but-link" href="https://samara.hh.ru/resume/c3cafcb1ff0c714b5c0039ed1f4e5631633637">
-                                        <div class="user-tab-second-img user-img-block" style="--background: url('../data/images/mainInfo/hhru.png')">
+                                        <div class="user-tab-second-img hhru user-img-block" style="--background: url('../data/images/mainInfo/hhru.png')">
                                             <span class="user-tab-second-img-text" style="--z-index: -1">КВ</span>
                                         </div>
-                                        <span class="main-info-user-tab-second-text">hh.ru</span>
+                                        <span class="main-info-user-tab-second-text candidate-link-text">hh.ru</span>
                                     </a>
                                     <span class="main-info-user-tab-second-dop-text">Должность</span>
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-vacancy">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Вакансия</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
-                                    <span class="main-info-user-tab-second-text">Back-end Разработчик</span>
+                                    <span class="main-info-user-tab-second-text candidate-vacancy-text">Back-end Разработчик</span>
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-rekruter">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Рекрутер</span>
                                 </div>
@@ -505,18 +515,18 @@
                                         <div class="user-tab-second-img user-img-block" style="--background: url('../data/images/usersAvatar/alexS.png')">
                                             <span class="user-tab-second-img-text" style="--z-index: 1">АС</span>
                                         </div>
-                                        <span class="main-info-user-tab-second-text">Александр Смахтин</span>
+                                        <span class="main-info-user-tab-second-text candidate-rekruter-text">Александр Смахтин</span>
                                     </a>
                                     <span class="main-info-user-tab-second-dop-text">Должность</span>
                                 </div>
                             </div>
 
-                            <div class="main-info-user-tab">
+                            <div class="main-info-user-tab candidate-want-zp">
                                 <div class="main-info-user-tab-first">
                                     <span class="main-info-user-tab-first-text">Желаемая зарплата</span>
                                 </div>
                                 <div class="main-info-user-tab-second">
-                                    <span class="main-info-user-tab-second-text">100 000 ₽ - 120 000 ₽</span>
+                                    <span class="main-info-user-tab-second-text candidate-want-zp-text">100 000 ₽ - 120 000 ₽</span>
                                 </div>
                             </div>
                         </div>   
@@ -1021,6 +1031,276 @@
                         </div>
 
                         <div class="main-info-comments-list scroll-bar">
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/maryK.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Мария Красельников</span>
+
+                                        <span class="user-info-job-title">HR-Менеджер</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Добавьте комментарий о наличии корпоративного ДМС, предоставления рабочего оборудования и официального трудоустройства.</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-info-comments-day">
+                                <div class="main-info-comments-day-value">
+                                    <span class="main-info-comments-day-text">Пятница</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/sergV.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">СВ</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Сергей Валентинова</span>
+
+                                        <span class="user-info-job-title">Кандидат</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-file">
+                                        <div class="comment-letter-file-img file-but" style="--background: url('../data/images/comments/file/very-long-file.png')">
+                                            <img class="comment-letter-file-download-img" src="data/images/mainInfo/download.svg">
+                                        </div>
+                                        <div class="comment-letter-file-value">
+                                            <div class="comment-letter-file-name">
+                                                <span class="comment-letter-file-name-text">Очень-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный файл.dox</span>
+                                                <span class="commnet-letter-file-name-format-text">файл.dox</span>
+                                            </div>
+                                            <div class="comment-letter-file-size">
+                                                <span class="comment-letter-file-size-number">4.4</span>
+                                                <span class="commnet-letter-file-size-bite">MB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text"></span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:54</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/valeraF.png')">
+                                        <span class="user-info-img-text" style="--z-index: 1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Валерий Филатов</span>
+
+                                        <span class="user-info-job-title">Генеральный директор</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Нам срочно нужен разработчик в штат, чтобы быстрее внедрять новые технологии и улучшать наши рабочие процессы. Это поможет нам быть более эффективными и конкурентоспособными на рынке</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/maryK.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Мария Красельников</span>
+
+                                        <span class="user-info-job-title">HR-Менеджер</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Добавьте комментарий о наличии корпоративного ДМС, предоставления рабочего оборудования и официального трудоустройства.</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-info-comments-day">
+                                <div class="main-info-comments-day-value">
+                                    <span class="main-info-comments-day-text">Позавчера</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/sergV.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">СВ</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Сергей Валентинова</span>
+
+                                        <span class="user-info-job-title">Кандидат</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-file">
+                                        <div class="comment-letter-file-img file-but" style="--background: url('../data/images/comments/file/very-long-file.png')">
+                                            <img class="comment-letter-file-download-img" src="data/images/mainInfo/download.svg">
+                                        </div>
+                                        <div class="comment-letter-file-value">
+                                            <div class="comment-letter-file-name">
+                                                <span class="comment-letter-file-name-text">Очень-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный файл.dox</span>
+                                                <span class="commnet-letter-file-name-format-text">файл.dox</span>
+                                            </div>
+                                            <div class="comment-letter-file-size">
+                                                <span class="comment-letter-file-size-number">4.4</span>
+                                                <span class="commnet-letter-file-size-bite">MB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text"></span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:54</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/valeraF.png')">
+                                        <span class="user-info-img-text" style="--z-index: 1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Валерий Филатов</span>
+
+                                        <span class="user-info-job-title">Генеральный директор</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Нам срочно нужен разработчик в штат, чтобы быстрее внедрять новые технологии и улучшать наши рабочие процессы. Это поможет нам быть более эффективными и конкурентоспособными на рынке</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/maryK.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Мария Красельников</span>
+
+                                        <span class="user-info-job-title">HR-Менеджер</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Добавьте комментарий о наличии корпоративного ДМС, предоставления рабочего оборудования и официального трудоустройства.</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-info-comments-day">
+                                <div class="main-info-comments-day-value">
+                                    <span class="main-info-comments-day-text">Вчера</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/sergV.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">СВ</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Сергей Валентинова</span>
+
+                                        <span class="user-info-job-title">Кандидат</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-file">
+                                        <div class="comment-letter-file-img file-but" style="--background: url('../data/images/comments/file/very-long-file.png')">
+                                            <img class="comment-letter-file-download-img" src="data/images/mainInfo/download.svg">
+                                        </div>
+                                        <div class="comment-letter-file-value">
+                                            <div class="comment-letter-file-name">
+                                                <span class="comment-letter-file-name-text">Очень-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный файл.dox</span>
+                                                <span class="commnet-letter-file-name-format-text">файл.dox</span>
+                                            </div>
+                                            <div class="comment-letter-file-size">
+                                                <span class="comment-letter-file-size-number">4.4</span>
+                                                <span class="commnet-letter-file-size-bite">MB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text"></span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:54</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/valeraF.png')">
+                                        <span class="user-info-img-text" style="--z-index: 1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Валерий Филатов</span>
+
+                                        <span class="user-info-job-title">Генеральный директор</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Нам срочно нужен разработчик в штат, чтобы быстрее внедрять новые технологии и улучшать наши рабочие процессы. Это поможет нам быть более эффективными и конкурентоспособными на рынке</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="main-info-comment">
                                 <div class="comment-user-info">
                                     <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/maryK.png')">
