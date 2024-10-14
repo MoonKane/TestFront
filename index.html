@@ -8,23 +8,126 @@
 </head>
 <body>
     
-    <section class="main-block">
+    <section class="nav-sidebar">
+        <div class="sidebar-head container">
+            <div class="sidebar-head-logo">
+                <img class="sidebar-head-logo-img svg-icon" src="data/images/sidebar/logo.svg">
+            </div>
+            <div class="sidebar-head-burder-but sidebar-burder-but button">
+                <img class="sidebar-head-burder-but-img svg-icon" src="data/images/sidebar/burger.svg">
+            </div>
+        </div>
 
+        <div class="nav-sidebar-list container">
+            <div class="nav-sidebar-list-tab" data-classObject="desktop">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/desktop.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Рабочий стол</span>
+                    <div class="notification-amount">
+                        <span class="notification-amount-text">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="mail">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/mail.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Заявки</span>
+                    <div class="notification-amount">
+                        <span class="notification-amount-text">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="plan">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/plan.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">План найма</span>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="vacancy">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/vacancy.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Вакансии</span>
+                    <div class="notification-amount">
+                        <span class="notification-amount-text">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab active" data-classObject="candidate">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/candidate.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Кандидаты</span>
+                    <div class="notification-amount">
+                        <span class="notification-amount-text">1</span>
+                    </div>
+                </div>
+                <div class="nav-sidebar-list-tab-angle button">
+                    <img class="nav-sidebar-tab-angle-img svg-icon" src="data/images/sidebar/angle-down.svg">
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="calendar">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/calendar.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Календарь</span>
+                </div>
+            </div>
+            
+            <div class="nav-sidebar-list-tab" data-classObject="chat">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/chat.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Чат</span>
+                    <div class="notification-amount">
+                        <span class="notification-amount-text">1</span>
+                    </div>
+                </div>
+                <div class="nav-sidebar-list-tab-angle button">
+                    <img class="nav-sidebar-tab-angle-img svg-icon" src="data/images/sidebar/angle-down.svg">
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="study">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/study.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Обучение</span>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="tarif-pay">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/star.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Тарифы и оплата</span>
+                </div>
+            </div>
+
+            <div class="nav-sidebar-list-tab" data-classObject="setting">
+                <img class="nav-sidebar-tab-img svg-icon" src="data/images/sidebar/setting.svg">
+                <div class="nav-sidebar-list-tab-name">
+                    <span class="nav-sidebar-list-name-text">Настройки</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-block desktop">
         <header class="header">
             <section class="header-container container">
                 
                 <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
                     <div class="header-but back-but button">
                         <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
                     </div>
                     
                     <div class="header-nav-info">
 
-                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text">Кандидаты</span></a>
-                        <div class="header-nav-info-arrow">
-                            <img class="arrow-img svg-icon" src="data/images/header/rightArrow.svg">
-                        </div>
-                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active-text">Информация о кандидате</span></a>
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Рабочий стол</span></a>
 
                     </div>
 
@@ -49,8 +152,217 @@
                     </label>
 
                     <div class="header-but user-but button">
-                        <div class="user-but-img">
-                            <span class="header-user-but-test">АС</span>
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block mail">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Заявки</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block plan">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">План найма</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block vacancy">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Вакансии</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block candidate active">
+
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text">Кандидаты</span></a>
+                        <div class="header-nav-info-arrow">
+                            <img class="arrow-img svg-icon" src="data/images/header/rightArrow.svg">
+                        </div>
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Информация о кандидате</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
                         </div>
                     </div>
 
@@ -59,7 +371,1026 @@
             </section>
         </header>
 
+        <section class="candidate-info">
+            <section class="tabs">
+                <section class="tabs-container container">
+
+                    <section class="tabs-head">
+                        <span class="tabs-head-text">Информация о кандидате</span>
+                    </section>
+
+                    <section class="tabs-block">
+
+                        <div class="tabs-but button active" data-classObject="main-info">
+                            <span class="tabs-but-text">Основная информация</span>
+                        </div>
+
+                        <div class="tabs-but button" data-classObject="exercise">
+                            <span class="tabs-but-text">Задачи</span>
+                            <div class="notification-amount">
+                                <span class="notification-amount-text">1</span>
+                            </div>
+                        </div>
+
+                        <div class="tabs-but button" data-classObject="meeting">
+                            <span class="tabs-but-text">Собеседования</span>
+                        </div>
+
+                        <div class="tabs-but button" data-classObject="chat">
+                            <span class="tabs-but-text">Чат</span>
+                            
+                        </div>
+
+                        <div class="tabs-but button" data-classObject="comments">
+                            <span class="tabs-but-text">Комментарии</span>
+                        </div>
+
+                        <div class="tabs-but button" data-classObject="changes-history">
+                            <span class="tabs-but-text">История изменений</span>
+                        </div>
+
+                    </section>
+
+                    
+                </section>
+
+            </section>
+
+            <section class="candidate-info-tab-block main-info active-block">
+                <section class="main-info-left container">
+                    <div class="main-info-head">
+                        <span class="main-info-head-text">Основная информация</span>
+                    </div>
+
+                    <div class="main-info-user">
+
+                        <div class="main-info-user-head">
+                            <div class="main-info-user-img user-img-block">
+                                <span class="main-info-user-text">КВ</span>
+                            </div>
+                            
+                            <div class="main-info-user-text-block">
+                                <span class="header-user-text">Константинопольский Валерий Сергеевич</span>
+                            </div>
+                        </div>
+
+                        <div class="main-info-user-tabs">
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Телефон</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                        <span class="main-info-user-tab-second-text phone-number-text">+7 (927) 699-22-32</span>
+                                        <div class="user-tab-second-but phone-number-copy-but">
+                                            <img class="user-tab-second-but-img svg-icon" src="data/images/mainInfo/copy.svg">
+                                        </div>
+                                        <span class="main-info-user-tab-second-text phone-number-search-text">Искать в</span>
+                                        <div class="user-tab-second-but phone-number-telegram-but">
+                                            <img class="user-tab-second-but-img svg-icon" src="data/images/mainInfo/telegram.svg">
+                                        </div>
+                                        <div class="user-tab-second-but phone-number-whatsapp-but">
+                                            <img class="user-tab-second-but-img svg-icon" src="data/images/mainInfo/whatsapp.svg">
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Email</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <span class="main-info-user-tab-second-text">konstantinopol@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Telegram</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <span class="main-info-user-tab-second-text">@konstantinopol</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Источник</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <a class="user-but-link" href="https://samara.hh.ru/resume/c3cafcb1ff0c714b5c0039ed1f4e5631633637">
+                                        <div class="user-tab-second-img user-img-block" style="--background: url('../data/images/mainInfo/hhru.png')">
+                                            <span class="user-tab-second-img-text" style="--z-index: -1">КВ</span>
+                                        </div>
+                                        <span class="main-info-user-tab-second-text">hh.ru</span>
+                                    </a>
+                                    <span class="main-info-user-tab-second-dop-text">Должность</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Вакансия</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <span class="main-info-user-tab-second-text">Back-end Разработчик</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Рекрутер</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <a class="user-but-link" href="#">
+                                        <div class="user-tab-second-img user-img-block" style="--background: url('../data/images/usersAvatar/alexS.png')">
+                                            <span class="user-tab-second-img-text" style="--z-index: 1">АС</span>
+                                        </div>
+                                        <span class="main-info-user-tab-second-text">Александр Смахтин</span>
+                                    </a>
+                                    <span class="main-info-user-tab-second-dop-text">Должность</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-user-tab">
+                                <div class="main-info-user-tab-first">
+                                    <span class="main-info-user-tab-first-text">Желаемая зарплата</span>
+                                </div>
+                                <div class="main-info-user-tab-second">
+                                    <span class="main-info-user-tab-second-text">100 000 ₽ - 120 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>   
+
+                    </div>
+
+
+                </section>
+
+
+                <section class="main-info-right">
+
+                    <section class="main-info-vacancies container">
+                        <div class="main-info-head">
+                            <span class="main-info-head-text">Вакансии</span>
+                            <div class="main-info-head-but button">
+                                <img class="main-info-head-but-img svg-icon" src="data/images/mainInfo/addVacation.svg">
+                                <span class="main-info-head-but-text">Добавить вакансию</span>
+                            </div>
+                        </div>
+
+                        <section class="main-info-vacancies-list scroll-bar">
+                            <div class="main-info-vacancy">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отклик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy vacancy-second">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Собеседование</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy vacancy-third">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Тестовое задание</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy vacancy-fourth">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Утверждён</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy vacancy-fifth">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отказано</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-foot">
+                                        <div class="main-info-vacancy-foot-status">
+                                            <span class="main-info-vacancy-status-text">Кандидат не явился на собеседование</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отклик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отклик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отклик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+
+                            <div class="main-info-vacancy">
+                                <div class="main-info-vacancy-info">
+                                    <div class="main-info-vacancy-head">
+                                        <div class="main-info-vacancy-head-left">
+                                            <span class="main-info-vacancy-value-text">Back-end разработчик</span>
+                                        </div>
+                                        
+                                        <div class="main-info-vacancy-head-right">
+                                            Этап: <span class="main-info-vacancy-status-text">Отклик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-info-vacancy-status-bar">
+                                        <div class="vacancy-status-bar-line active-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="vacancy-status-bar-line">
+                                            <svg class="vacancy-status-bar-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+                                                <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#E6E6E6"/>
+                                                <circle cx="8" cy="8" r="4" fill="#F6F6F6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-info-vacancy-but delete-but button">
+                                    <img class="main-info-vacancy-but-img" src="data/images/mainInfo/delete.svg">
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="main-info-comments container">
+                        <div class="main-info-head">
+                            <span class="main-info-head-text">Комментарии</span>
+                        </div>
+
+                        <div class="main-info-comments-list scroll-bar">
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/maryK.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Мария Красельников</span>
+
+                                        <span class="user-info-job-title">HR-Менеджер</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Добавьте комментарий о наличии корпоративного ДМС, предоставления рабочего оборудования и официального трудоустройства.</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-info-comments-day">
+                                <div class="main-info-comments-day-value">
+                                    <span class="main-info-comments-day-text">Сегодня</span>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/sergV.png')">
+                                        <span class="user-info-img-text" style="--z-index: -1">СВ</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Сергей Валентинова</span>
+
+                                        <span class="user-info-job-title">Кандидат</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-file">
+                                        <div class="comment-letter-file-img file-but" style="--background: url('../data/images/comments/file/very-long-file.png')">
+                                            <img class="comment-letter-file-download-img" src="data/images/mainInfo/download.svg">
+                                        </div>
+                                        <div class="comment-letter-file-value">
+                                            <div class="comment-letter-file-name">
+                                                <span class="comment-letter-file-name-text">Очень-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный-длинный файл.dox</span>
+                                                <span class="commnet-letter-file-name-format-text">файл.dox</span>
+                                            </div>
+                                            <div class="comment-letter-file-size">
+                                                <span class="comment-letter-file-size-number">4.4</span>
+                                                <span class="commnet-letter-file-size-bite">MB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text"></span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:54</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-info-comment">
+                                <div class="comment-user-info">
+                                    <div class="user-info-img user-img-block" style="--background: url('../data/images/usersAvatar/valeraF.png')">
+                                        <span class="user-info-img-text" style="--z-index: 1">МК</span>
+                                    </div>
+
+                                    <div class="user-info-value">
+                                        <span class="user-info-name">Валерий Филатов</span>
+
+                                        <span class="user-info-job-title">Генеральный директор</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-letter">
+                                    <div class="comment-letter-value">
+                                        <span class="comment-letter-value-text">Нам срочно нужен разработчик в штат, чтобы быстрее внедрять новые технологии и улучшать наши рабочие процессы. Это поможет нам быть более эффективными и конкурентоспособными на рынке</span>
+                                    </div>
+                                    <div class="comment-letter-time">
+                                        <span class="comment-letter-time-text">20:53</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-info-comments-form">
+                            <div class="comments-form-prikrep-but form-but">
+                                <img class="form-but-img svg-icon" src="data/images/comments/button-svg/prikrep.svg">
+                            </div>
+
+                            <input class="form-input-text" type="text" placeholder="Комментарий">
+
+                            <div class="comments-form-sent-but form-but">
+                                <img class="form-but-img svg-icon" src="data/images/comments/button-svg/sent.svg">
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <section class="candidate-info-tab-block exercise">Exercise</section>
+            <section class="candidate-info-tab-block meeting">Meeting</section>
+            <section class="candidate-info-tab-block chat">Chat</section>
+            <section class="candidate-info-tab-block comments">Comments</section>
+            <section class="candidate-info-tab-block changes-history">Changes history</section>
+        </section>
+
     </section>
+
+    <section class="main-block calendar">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Календарь</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block chat">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Чат</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block study">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Обучение</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block tarif-pay">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Тарифы и оплата</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
+    <section class="main-block setting">
+        <header class="header">
+            <section class="header-container container">
+                
+                <div class="header-nav">
+                    <div class="header-but header-burger-but button">
+                        <img class="burger-but-img svg-icon" src="data/images/sidebar/burger.svg">
+                    </div>
+
+                    <div class="header-but back-but button">
+                        <img class="back-but-img svg-icon" src="data/images/header/backBut.svg">
+                    </div>
+                    
+                    <div class="header-nav-info">
+
+                        <a class="header-nav-info-link" href="#"><span class="header-nav-info-text active">Настройки</span></a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-user-block">
+
+                    <div class="header-but button">
+                        <img class="search-img svg-icon" src="data/images/header/search.svg">
+                    </div>
+
+                    <div class="header-but notification-but button">
+                        <img class="notification-img svg-icon" src="data/images/header/notificationRing.svg">
+                        <div class="notification-amount">
+                            <span class="notification-amount-text">12</span>
+                        </div>
+                    </div>
+
+                    <label class="header-but color-theme-checkbox-but button" for="color-theme-checkbox">
+                        <input type="checkbox" id="color-theme-checkbox">
+                        <img class="light-img svg-icon" src="data/images/header/light.svg">
+                    </label>
+
+                    <div class="header-but user-but button">
+                        <div class="user-but-img user-img-block">
+                            <span class="header-user-but-text">АС</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </header>
+    </section>
+
     <script src="scripts/main.js" type="text/javascript"></script>
 </body>
 </html>

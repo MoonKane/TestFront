@@ -2,15 +2,30 @@
 
     --text-color: #18181B;
     --text-color-gray: #747476;
+    --text-color-black: #18181B;
+
+    --blocks-border-color: #E6E6E6;
+    --form-but-prikrep-color: #E6E6E6;
 
     --background-color: #fff;
-    --user-background-color: #929298;
+    --but-background-color: #00000027;
+    --user-but-background-color: #929298;
     --notification-background-color: #D6FF2B;
+
+    --status-bar-line-default-color: #F6F6F6;
+    --status-bar-line-active-color: #929298;
+    
+    --scroll-track-color: #F6F6F6;
+    --scroll-thumb-color: #D1D1D1;
+    --scroll-track-hover-color: #ececec;
+    --scroll-thumb-hover-color: #929298;
+
+    --comments-bg-color: #F6F6F6;
 
     --container-width: 1800px;
     --container-max-width: 95%;
 
     --svg-invert: 0;
 
-    --header-button-size: 44px;
+    --button-size: 44px;
 }

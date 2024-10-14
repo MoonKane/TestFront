@@ -1,13 +1,24 @@
 @import url(variable.css);
 @import url(font.css);
+@import url(media.css);
 
 *, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
 body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+
     font-family: 'Inter';
     font-weight: 400;
     color: var(--text-color);
@@ -18,35 +29,141 @@ body:has(input[type=checkbox]#color-theme-checkbox:checked) {
     --text-color: #f9f9f9;
     --text-color-gray: #d4d4d4;
     --background-color: #18181B;
+    --but-background-color: #ffffff40;
+    --blocks-border-color: #ffffff60;
+    --status-bar-line-default-color: #ffffffda;
     --svg-invert: 1;
-}
-
-a {
-    color: var(--text-color-gray);
-    cursor: pointer;
-    font-weight: bold;
+    --comments-bg-color: #929298;
+    --scroll-track-color: #D1D1D1;
+    --scroll-thumb-color: #929298;
+    --scroll-thumb-hover-color: #505050c4;
 }
 
 .container {
-    width: min(var(--container-width), var(--container-max-width));
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
 }
 
-.active-text {
-    color: var(--text-color);
+
+
+
+
+/* Nav Sidebar */
+
+.nav-sidebar {
+    min-height: 100vh;
+    min-width: 260px;
+    background-color: inherit;
+    width: 260px;
+    border-right: 1px solid var(--blocks-border-color);
 }
 
+.sidebar-head {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid var(--blocks-border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-head-burder-but {
+    width: var(--button-size);
+    height: var(--button-size);
+    min-width: var(--button-size);
+    min-height: var(--button-size);
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-sidebar-list {
+    padding: 20px 10px;
+}
+
+.nav-sidebar-list-tab {
+    width: 100%;
+    height: 44px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+    transition: background-color 0.2s linear;
+}
+
+.nav-sidebar-list-tab:hover {
+    background-color: var(--blocks-border-color);
+}
+
+.nav-sidebar-list-tab:active {
+    background-color: inherit;
+}
+
+.nav-sidebar-list-tab.active {
+    background-color: var(--blocks-border-color);
+}
+
+.nav-sidebar-list-tab-name {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-sidebar-list-tab-name span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nav-sidebar-list-tab-angle {
+    width: 23px;
+    height: 23px;
+    min-width: 23px;
+    min-height: 23px;
+    
+    margin-left: 10px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Block */
+
+.main-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-block:not(.active) {
+    display: none;
+}
 
 
 /* Header */
 
 .header {
+    width: 100%;
     height: 64px;
+    min-height: 64px;
+    max-height: 64px;
+    border-bottom: 1px solid var(--blocks-border-color);
+    background-color: var(--background-color);
 }
 
 .header span {
     font-size: 14px;
     line-height: 20px;
+    font-weight: 600;
 }
 
 .header-container {
@@ -70,17 +187,474 @@ a {
 
 .header-user-block {
     display: inherit;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: inherit;
 }
 
 
+/* Candidate Info */
+
+.candidate-info {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Candidate Info \ Tabs */
+
+.tabs {
+    width: 100%;
+    border-bottom: 1px solid var(--blocks-border-color);
+}
+
+.tabs-head {
+    width: 100%;
+    padding: 21px 0;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.tabs-block {
+    display: flex;
+}
+
+.tabs-block span {
+    color: var(--text-color-gray);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.tabs-block .active {
+    border-bottom: 2px solid var(--text-color);
+}
+.tabs-block .active span {
+    color: var(--text-color);
+}
+
+.candidate-info .candidate-info-tab-block:not(.active-block) {
+    display: none;
+}
+
+
+
+/* Candidate Info \ Main Info */
+
+.main-info {
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr;
+}
+
+.main-info-left .main-info-user-head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.main-info-head {
+    margin: 20px 0;
+}
+
+.main-info-head span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+
+/* Candidate Info \ Main Info \ Left */
+
+.main-info-left {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding-right: 15px;
+    border-right: 1px solid var(--blocks-border-color);
+}
+
+.main-info-user-text-block {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.main-info-user-tab {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.main-info-user-tab-second {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.main-info-user-tab-first-text, .main-info-user-tab-second-text {
+    text-wrap: wrap;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.main-info-user-tab-first-text, .main-info-user-tab-second-dop-text {
+    color: var(--text-color-gray);
+}
+
+.main-info-user-tab-second-dop-text {
+    margin-left: 3px;
+    padding: 0 3px 1px 0;
+    align-self: self-end;
+}
+
+.main-info-user-tab-second-dop-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.phone-number-search-text {
+    margin-left: 10px;
+}
+.main-info-user-tab-second .user-tab-second-but {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 5px;
+    padding: 4px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--blocks-border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info-user-tab-second .user-tab-second-but:hover {
+    background-color: var(--blocks-border-color);
+}
+.main-info-user-tab-second .user-tab-second-but:active {
+    background-color: inherit;
+}
+
+
+
+/* Candidate Info \ Main Info \ Right */
+
+.main-info-right {
+    height: 100%;
+    max-height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.main-info-right .container {
+    padding-bottom: 20px;
+}
+
+.main-ingo-vacancies {
+    min-height: 20%;
+    max-height: 50%;
+}
+
+.main-info-comments {
+    min-height: 50%;
+    max-height: 80%;
+}
+
+
+
+/* Candidate Info \ Main Info \ Right \ Vacancies */
+
+.main-info-vacancies {
+    border-bottom: 1px solid var(--blocks-border-color);
+}
+
+.main-info-vacancies .main-info-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info-vacancy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-info-vacancy-info {
+    width: 100%;
+}
+
+.main-info-vacancies-list {
+    height: 100%;
+    max-height: 27vh;
+    overflow-y: auto;
+}
+
+.main-info-vacancy-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-info-vacancy-head-left span, .main-info-vacancy-head-right span {
+    font-size: 14px;
+    line-height: 20px;
+}
+.main-info-vacancy-head-left span {
+    font-weight: 600;
+}
+.main-info-vacancy-head-right  {
+    color: var(--text-color-gray);
+    font-weight: 400;
+}
+.main-info-vacancy-head-right span {
+    color: var(--status-bar-line-active-color);
+}
+
+.main-info-vacancy-status-bar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vacancy-status-bar-line {
+    position: relative;
+    display: inherit;
+    align-items: inherit;
+    width: 25%;
+    height: 6px;
+    border-radius: 8px;
+    background-color: var(--status-bar-line-default-color);
+}
+
+.vacancy-status-bar-line svg {
+    position: absolute;
+    right: -8px;
+    z-index: 20;
+}
+.vacancy-status-bar-line svg circle {
+    fill: var(--status-bar-line-default-color);
+}
+.main-info-vacancy-status-bar .active-line {
+    background-color: var(--status-bar-line-active-color);
+}
+
+.main-info-vacancy-status-bar .active-line svg circle{
+    fill: var(--status-bar-line-active-color);
+}
+
+.main-info-vacancy-foot {
+    margin-top: 10px;
+    color: var(--status-bar-line-active-color);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.vacancy-second {
+    --status-bar-line-active-color: #009AC1;
+}
+.vacancy-third {
+    --status-bar-line-active-color: #F5C20B;
+}
+.vacancy-fourth {
+    --status-bar-line-active-color: #22C55E;
+}
+.vacancy-fifth {
+    --status-bar-line-active-color: #EF4444;
+}
+
+
+
+/* Candidate Info \ Main Info \ Right \ Comments */
+
+.main-info-comments-list {
+    width: 100%;
+    height: 100%;
+    max-height: 27vh;
+    overflow-y: auto;
+}
+
+.main-info-comment {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.comment-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.main-info-comments-day {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.main-info-comments-day-value {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 120px;
+    background-color: var(--comments-bg-color);
+}
+
+.main-info-comments-day-value span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.user-info-img {
+    margin: 13px 0 7px;
+    --button-size: 24px;
+}
+
+.user-info-img span, .user-info-job-title {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.user-info-job-title {
+    color: var(--text-color-gray);
+}
+
+.user-info-value {
+    margin: 0 10px;
+}
+
+.user-info-value .user-info-name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.comment-letter {
+    position: relative;
+    text-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--comments-bg-color);
+    border-radius: 8px;
+}
+
+.comment-letter-value span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.comment-letter-file {
+    display: flex;
+}
+
+.comment-letter-file .file-but {
+    margin-right: 10px;
+}
+
+.comment-letter-file-value span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.comment-letter-file-size span {
+    color: var(--text-color-gray);
+}
+
+
+.comment-letter-time {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.comment-letter-time span {
+    color: var(--text-color-gray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+
+/* Candidate Info \ Main Info \ Right \ Comments \ Form */
+
+.main-info-comments-form {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments-form-prikrep-but {
+    transition: background-color 0.2s linear;
+    border: 1px solid var(--form-but-prikrep-color);
+}
+
+.comments-form-prikrep-but:hover {
+    background-color: var( --form-but-prikrep-color);
+}
+
+.comments-form-prikrep-but:active {
+    background-color: inherit;
+}
+
+.form-input-text {
+    height: 44px;
+    flex: content;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    padding: 0 10px;
+    margin: 0 5px;
+
+    border: 1px solid var(--scroll-thumb-color);
+    border-radius: 8px;
+}
+
+.comments-form-sent-but {
+    transition: background-color 0.2s linear;
+    background-color: var(--text-color);
+}
+
+.comments-form-sent-but:hover {
+    background-color: var(--text-color-gray);
+}
+
+.comments-form-sent-but:active {
+    background-color: var(--text-color);
+}
+
+
+
 /* Images */
 
-img {
-    -webkit-user-select: none;  /* Chrome/Safari */
-    -moz-user-select: none;  /* Firefox */
-    -ms-user-select: none;  /* IE/Edge */
+img, .user-img-block {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -94,33 +668,91 @@ img {
     margin: 6px 3px 0 3px
 }
 
+.user-img-block {
+    background-image: var(--background);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--button-size);
+    height: var(--button-size);
+    min-height: var(--button-size);
+    min-width: var(--button-size);
+    border-radius: 120px;
+    background-color: var(--user-but-background-color);
+}
+
+.user-but-link {
+    display: flex;
+    align-items: center;
+}
+
+.user-img-block span {
+    color: #fff;
+    font-weight: 400;
+    z-index: var(--z-index);
+}
+
+.main-info-left .user-img-block {
+    --button-size: 96px;
+}
+
+.main-info-left .user-img-block span {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.main-info-left .main-info-user-tab-second .user-img-block {
+    margin-right: 5px;
+    --button-size: 24px;
+}
+
+.main-info-left .main-info-user-tab-second .user-img-block span {
+    font-size: 10px;
+    line-height: 16px;
+}
+
 
 
 /* Button */
 
 .button {
     cursor: pointer;
-    transition: transform 0.1s linear;
+    transition: background-color 0.1s linear;
     -webkit-user-select: none;  /* Chrome/Safari */
     -moz-user-select: none;  /* Firefox */
     -ms-user-select: none;  /* IE/Edge */
     user-select: none;
 }
 
-.button:not(.user-but, .back-but):hover {
-    transform: scale(1.1);
+.button:hover {
+    background-color: var(--but-background-color);
 }
 
-.button:not(.user-but, .back-but):active {
-    transform: scale(0.9);
+.button:active {
+    background-color: inherit;
 }
 
 .header-but {
-    width: var(--header-button-size);
-    height: var(--header-button-size);
     display: inherit;
-    justify-content: inherit;
+    justify-content: center;
     align-items: inherit;
+}
+
+.header-but:not(.back-but, .header-burger-but) {
+    margin-left: 10px;
+}
+
+.header-but:not(.user-but) {
+    width: calc(var(--button-size)/1.2);
+    height: calc(var(--button-size)/1.2);
+    border-radius: 120px;
+}
+
+.header-nav .header-but {
+    margin-right: 10px;
 }
 
 .notification-but {
@@ -129,56 +761,153 @@ img {
 
 .notification-but .notification-amount {
     position: absolute;
-    right: 0;
+    right: -3px;
     top: 0;
-
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-
     width: 24px;
-    height: 20px;
-    
-    font-size: 10px;
-    line-height: 16px;
-    color: #18181B;
-
-    background-color: var(--notification-background-color);
-    border-radius: 120px;
 }
 
-.user-but-img {
+.tabs-but {
+    display: flex;
+    padding: 13px 12px;
+}
+
+.main-info-head-but {
     display: inherit;
-    justify-content: inherit;
     align-items: inherit;
-    width: 100%;
-    height: 100%;
-    border-radius: 120px;
-    background-color: var(--user-background-color);
+    padding: 10px;
+    border: 1px solid var(--blocks-border-color);
+    border-radius: 6px;
 }
 
-.back-but {
-    width: calc(var(--header-button-size)/1.2);
-    height: calc(var(--header-button-size)/1.2);
-    margin: 11px;
-    border-radius: 120px;
+.main-info-head-but-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
 
-.back-but:hover {
-    background-color: var(--user-background-color);
+.main-info-head-but span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
 }
 
-.user-but:hover {
-    background-color: #c5c5c5;
+.main-info-vacancy-but {
+    display: inherit;
+    align-items: center;
+    justify-content: inherit;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 0 20px;
+    background-color: var(--status-bar-line-default-color);
 }
 
-.user-but:active, .back-but:active {
-    background-color: var(--background-color);
+.file-but {
+    width: var(--button-size);
+    height: var(--button-size);
+    min-width: var(--button-size);
+    min-height: var(--button-size);
+
+    background-color: var(--text-color-black);
+    background-image: var(--background);
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.file-but:hover {
+    transform: scale(1.1);
+}
+
+.file-but:active {
+    transform: scale(1);
+}
+
+.form-but {
+    width: var(--button-size);
+    height: var(--button-size);
+    min-width: var(--button-size);
+    min-height: var(--button-size);
+    cursor: pointer;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* Checkbox */
 
 .color-theme-checkbox-but input[type=checkbox] {
     display: none;
+}
+
+
+
+/* Text */
+
+a {
+    color: var(--text-color-gray);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.active {
+    color: var(--text-color);
+}
+
+.notification-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--notification-background-color);
+    border-radius: 120px;
+}
+
+.notification-amount .notification-amount-text {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #18181B;
+}
+
+.tabs-but .notification-amount {
+    margin-left: 5px;
+}
+
+
+
+/* Scrollbar */
+
+.scroll-bar::-webkit-scrollbar {
+    width: 6px;
+}
+.scroll-bar::-webkit-scrollbar-track {
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    background-color: var(--scroll-track-color);
+}
+.scroll-bar::-webkit-scrollbar-track:hover {
+    cursor: pointer;
+    --scroll-track-color: var(--scroll-track-hover-color);
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 120px;
+    border-radius: 120px;
+    background-color: var(--scroll-thumb-color);
+}
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--scroll-thumb-hover-color);
 }
