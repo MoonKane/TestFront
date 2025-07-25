@@ -39,6 +39,11 @@ body:has(input[type=checkbox]#color-theme-checkbox:checked) {
     --scroll-thumb-hover-color: #505050c4;
 }
 
+span {
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
 .container {
     width: 100%;
     padding: 0 20px;
@@ -427,9 +432,12 @@ body:has(input[type=checkbox]#color-theme-checkbox:checked) {
     overflow-y: auto;
 }
 
-.main-info-vacancy-head {
-    display: flex;
-    justify-content: space-between;
+.main-info-vacancy-head-left {
+    float: left;
+}
+
+.main-info-vacancy-head-right {
+    float: right;
 }
 
 .main-info-vacancy-head-left span, .main-info-vacancy-head-right span {
